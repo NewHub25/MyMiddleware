@@ -91,7 +91,6 @@ declare global {
 ```JSON
 {
   "compilerOptions": {
-    // ... otras configuraciones
     "typeRoots": [
       "./node_modules/@types",
       "./@types"
@@ -111,6 +110,7 @@ Para extender Request en TypeScript:
 2. Configura typeRoots y include en tsconfig.json
 3. ¡Usa tus propiedades sin miedo a los tipos!
 
+## 🧬 Estructura del proyecto final
 ```mermaid
 graph TD
     A[📦 MyMiddleware] --> B(📂 @types/)
@@ -124,8 +124,6 @@ graph TD
     A --> J(📄 package.json)
     A --> K(📄 package-lock.json)
 ```
-
-![Estructura de Directorios](./src/mermaid.png)
 
 ---
 
