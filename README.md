@@ -3,7 +3,7 @@
 A menudo fascinado por la creación de mis propias API's, quise esta vez crear mis propios "middleware". Después de investigar por dos días, encontré la solución para agregar propiedades personalizadas al objeto `Request` de Express en TypeScript. Aquí el resumen técnico:
 
 > [!NOTE]
-> Este ejemplo es para que veas lo fácil que puede ser crear tu propio middleware en Typescript, lo que puede a veces resultar difícil configurar.
+> Este ejemplo es para que veas lo fácil que puede ser crear tu propio middleware en Typescript, lo que puede a veces resultar difícil configurar el tsconfig.json.
 
 ---
 
