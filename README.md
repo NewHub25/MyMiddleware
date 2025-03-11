@@ -53,6 +53,7 @@ declare module "express" {
 ```
 
 #### Al compilar ⛔
+```html
 <section style="font: .9rem 'Courier', sans-serif">
 <p>
 <span style="color:#00ff00">user@hostname</span> <span style="color:violet">MINGW64</span> <span style="color:#ffff00">~/MyMiddleware</span><br />
@@ -66,6 +67,7 @@ declare module "express" {
 <span style="color:#0090de">src/index.ts</span>:<span style="color:#ffff00">11:11</span> - <span style="color:#ff5555">error TS2339</span>: Property 'datosUsuario' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>.
 </p>
 </section>
+```
 
 ## 🛠️ La Solución
 <strong>@types/express.d.ts</strong>
@@ -85,18 +87,19 @@ declare global {
 ```
 
 <strong>tsconfig.jon</strong>
+✅ Se debe incluir los tipos
 ```JSON
 {
   "compilerOptions": {
     // ... otras configuraciones
     "typeRoots": [
       "./node_modules/@types",
-      "./@types" // ✅ Se debe incluir los tipos
+      "./@types"
     ]
   },
   "include": [
     "src/**/*",
-    "@types/**/*" // ✅ Se debe incluir los tipos
+    "@types/**/*"
   ]
 }
 ```
@@ -108,21 +111,7 @@ Para extender Request en TypeScript:
 2. Configura typeRoots y include en tsconfig.json
 3. ¡Usa tus propiedades sin miedo a los tipos!
 
-<template>
-<summary>📁 Estructura final del proyecto</summary>
-📦 **MyMiddleware**<br />
-├─ 📂 `@types/`<br />
-│&nbsp;&nbsp;&nbsp;&nbsp;└─ 📄 `express.d.ts`<br />
-├─ 📂 `dist/`<br />
-├─ 📂 `node_modules/`<br />
-├─ 📂 `src/`<br />
-│&nbsp;&nbsp;&nbsp;&nbsp;├── 📄 `index.ts`<br />
-│&nbsp;&nbsp;&nbsp;&nbsp;└── 📄 `middleware.ts`<br />
-├─ 📄 `tsconfig.json`<br />
-├─ 📄 `package.json`<br />
-└─ 📄 `package-lock.json`<br />
-</template>
-<template>
+```mermaid
 graph TD
     A[📦 MyMiddleware] --> B(📂 @types/)
     B --> C(📄 express.d.ts)
@@ -134,7 +123,7 @@ graph TD
     A --> I(📄 tsconfig.json)
     A --> J(📄 package.json)
     A --> K(📄 package-lock.json)
-</template>
+```
 
 ![Estructura de Directorios](./src/mermaid.png)
 
