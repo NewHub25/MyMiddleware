@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "rootDirs": [
+      "./src/"
+    ],
+    "outDir": "./dist",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./@types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+  },
+  "include": [
+    "src/**/*",
+    "@types/**/*"
+  ]
+}
