@@ -127,7 +127,8 @@ graph TD
 
 ---
 
-⚠️ Importante: Verifica que tu directorio @types esté en la raíz del proyecto.
+> [!WARNING]
+> Importante: Verifica que tu directorio @types esté en la raíz del proyecto.
 
 ---
 
