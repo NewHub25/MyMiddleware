@@ -56,7 +56,6 @@ declare module "express" {
 ```
 
 #### Al compilar ⛔
-```html
 <section style="font: .9rem 'Courier', sans-serif">
 <p>
 <span style="color:#00ff00">user@hostname</span> <span style="color:violet">MINGW64</span> <span style="color:#ffff00">~/MyMiddleware</span><br />
@@ -70,7 +69,6 @@ declare module "express" {
 <span style="color:#0090de">src/index.ts</span>:<span style="color:#ffff00">11:11</span> - <span style="color:#ff5555">error TS2339</span>: Property 'datosUsuario' does not exist on type 'Request<{}, any, any, ParsedQs, Record<string, any>>.
 </p>
 </section>
-```
 
 ## 🛠️ La Solución
 <strong>@types/express.d.ts</strong>
